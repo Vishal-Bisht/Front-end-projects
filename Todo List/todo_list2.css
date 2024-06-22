@@ -1,0 +1,22 @@
+.todo_head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;  
+}
+
+.container {
+    width: 85vw;
+}
+
+.listItems {
+    grid-template-columns: repeat(4,minmax(5px,200px));
+}
+
+.date{
+    padding: 5px;
+}
+
+.btn_dlt {
+    padding: 5px 12px;
+}
