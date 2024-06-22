@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(230, 168, 87);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0.822);
+    margin: 5px 20px;
+    padding: 15px;
+    width: 65vw;
+    min-height: 85vh;
+    max-height: 85%;
+    border-radius: 15px;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.listItems, .todo_head {
+    display: grid;
+    grid-template-columns:200px 100px 125px  100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.todo_head{
+    margin-bottom: 30px;
+    align-items: stretch;
+}
+
+.input, .time {
+    font-size: 15px;
+    padding: 6px;
+}
+
+.date {
+    font-size: 15px;
+}
+
+.time, .date {
+    cursor: pointer;
+}
+
+.btn_add {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 8px 30px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.btn_add:hover {
+    background-color: darkgreen;
+}
+
+.btn_dlt {
+    background-color: darkred;
+    border: none;
+    color: white;
+    padding: 8px 30px;
+    font-size: 15px;
+    padding: 8px 29.3px;
+    cursor: pointer;
+}
+
+.btn_dlt:hover {
+    background-color: red;
+}
