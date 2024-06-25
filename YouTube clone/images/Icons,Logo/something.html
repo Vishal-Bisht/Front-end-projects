@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Search Bar Clone</title>
+<style>
+  .search-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .search-input {
+    width: calc(100% - 44px);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    float: left;
+  }
+
+  .search-button {
+    width: 44px;
+    height: 100%;
+    border: none;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    float: right;
+    color: #606060;
+  }
+
+  .search-button i {
+    font-size: 20px;
+  }
+</style>
+</head>
+<body>
+  <div class="search-container">
+    <input type="text" class="search-input" placeholder="Search">
+    <button class="search-button"><i class="fa fa-search">
+      <img src="images/Icons,Logo/search.svg" alt="">
+    </i></button>
+  </div>
+</body>
+</html>
