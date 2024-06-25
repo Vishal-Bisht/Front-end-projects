@@ -1,0 +1,261 @@
+ .header {
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+ }
+
+ .left-section {
+    display: flex;
+    align-items: center;
+    padding: 0px 60px 0 21px;
+ }
+
+ .middle-section {
+    display: flex;
+    flex: 1;
+    align-items: center;
+ }
+
+ .right-section {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 25px;
+ }
+
+ .hamburger_icon {
+    width: 100%;
+    padding: 8px;
+ }
+
+ .btn_hamburger {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.25s;
+ }
+
+ .btn_hamburger:hover {
+    background-color: rgba(184, 184, 184, 0.41);
+    border-radius: 20px;
+ }
+
+
+ .youtube_logo {
+    width: 100%;
+ }
+
+ .btn_yt_logo {
+    width: 98px;
+    background-color: transparent;
+    border: none;
+    padding-left: 30px;
+ }
+
+ .search-bar-container {
+    max-width: 700px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+ }
+
+ .search_bar {
+    width: 50px;
+    flex: 1;
+    height: 40px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.80);
+    padding: 0px 15px;
+    border: 1px solid rgba(204, 203, 203, 0.61);
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: inset 1px 0px 1px rgba(197, 197, 197, 0.877);
+ }
+
+ .search_bar:focus {
+    margin-right: 1px;
+    outline: rgb(88, 147, 255) inset thin;
+ }
+
+ .search_bar::placeholder {
+    font-size: 16px;
+ }
+
+ .search_icon {
+    width: 100%;
+    padding: 16px;
+ }
+
+ .btn_search {
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgba(255, 255, 255, 0.945); */
+    background-color: rgba(233, 233, 233, 0.3);
+    border: 1px solid rgba(204, 203, 203, 0.61);
+    border-radius: 0px 20px 20px 0px;
+    margin-right: 10px;
+    transition: background-color 0.15s;
+ }
+
+ .btn_search:hover {
+    background-color: rgba(233, 233, 233, 0.6);
+ }
+
+ .voice_search_icon {
+    width: 100%;
+    padding: 6px;
+ }
+
+ .btn_voice_search {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(189, 189, 189, 0.4);
+    border: none;
+    /* border: 1px solid rgba(204, 203, 203, 0.61); */
+    border-radius: 20px;
+    transition: background-color 0.25s;
+ }
+
+ .btn_voice_search:hover {
+    background-color: rgba(189, 189, 189, 1);
+ }
+
+ .three_dots_icon {
+    width: 100%;
+    padding: 2px;
+ }
+
+ .btn_three_dots {
+    width: 22px;
+    background-color: transparent;
+    border: none;
+ }
+
+ .upload_icon {
+    width: 100%;
+    padding: 2px;
+ }
+
+ .btn_upload {
+    width: 35px;
+    background-color: transparent;
+    border: none;
+ }
+
+ .notification-alert {
+    position: relative;
+ }
+
+ .count {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    background-color: rgb(219, 11, 11);
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 15px;
+ }
+
+ .notification_icon {
+    width: 100%;
+    padding: 2px;
+ }
+
+ .btn_notifications {
+    position: relative;
+    width: 32px;
+    background-color: transparent;
+    border: none;
+ }
+
+ .account_icon {
+    width: 25px;
+    padding-right: 8px;
+ }
+
+ .btn_sign-in {
+    width: 90px;
+    padding: 8px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px solid rgba(204, 203, 203, 0.61);
+    border-radius: 30px;
+    box-shadow: inset 1px 0px 1px rgba(197, 197, 197, 0.877);
+ }
+
+ .btn_yt_logo,
+ .btn_search,
+ .btn_voice_search,
+ .btn_three_dots,
+ .btn_upload,
+ .btn_notifications {
+    display: flex;
+    justify-content: center;
+    position: relative;
+ }
+
+ .btn_yt_logo .tooltip,
+ .btn_search .tooltip,
+ .btn_voice_search .tooltip,
+ .btn_three_dots .tooltip,
+ .btn_upload .tooltip,
+ .btn_notifications .tooltip {
+    position: absolute;
+    background-color: rgba(94, 94, 94, 0.9);
+    color: white;
+    padding: 4px 8px;
+    font-size: 13px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.25s;
+    pointer-events: none;
+    white-space: nowrap;
+ }
+
+ .btn_yt_logo .tooltip {
+    top: 32px;
+    left: 20px;
+ }
+
+ .btn_search .tooltip {
+    top: 45px;
+ }
+
+ .btn_voice_search .tooltip {
+    top: 46px;
+ }
+
+ .btn_three_dots .tooltip {
+    top: 37px;
+ }
+
+ .btn_upload .tooltip {
+    top: 44px;
+ }
+
+ .btn_notifications .tooltip {
+    top: 42px;
+ }
+
+ .btn_yt_logo:hover .tooltip,
+ .btn_search:hover .tooltip,
+ .btn_voice_search:hover .tooltip,
+ .btn_three_dots:hover .tooltip,
+ .btn_upload:hover .tooltip,
+ .btn_notifications:hover .tooltip {
+    opacity: 1;
+ }
