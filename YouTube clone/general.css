@@ -43,6 +43,19 @@ p {
   }
 }
 
+@media (max-width: 750px) {
+
+  .notification-alert,
+  .upload {
+     display: none;
+  }
+
+  .middle-section {
+     justify-content: center;
+  }
+
+}
+
 @media (max-width: 645px) {
   body {
     padding-left: 5px;
